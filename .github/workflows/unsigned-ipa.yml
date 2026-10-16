@@ -63,7 +63,7 @@ jobs:
           unzip -l "$RUNNER_TEMP/ChatGPTUIDemo-unsigned.ipa" | head -25
 
       - name: Upload unsigned IPA
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ChatGPTUIDemo-unsigned-ipa
           path: ${{ runner.temp }}/ChatGPTUIDemo-unsigned.ipa
